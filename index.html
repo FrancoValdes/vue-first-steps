@@ -10,6 +10,13 @@
 <body>
     <div id="app">
         {{ information }}
+        <ul>
+            <li v-for="fruta of frutas">
+                {{ fruta.nombre }} - {{ fruta.cantidad }}
+                <span v-if="fruta.cantidad === 0"> - Sin Stock</span>
+            </li>
+            
+        </ul>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

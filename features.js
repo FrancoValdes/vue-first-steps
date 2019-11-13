@@ -1,6 +1,11 @@
 const app = new Vue({
-    el: '#app', 
+    el: '#app',
     data: {
-        information:"hola"
+        information: 'hoangala',
+        frutas: [
+            { nombre: 'manzana', cantidad: 0 },
+            { nombre: 'platano', cantidad: 6 },
+            { nombre: 'naranja', cantidad: 16 }
+        ]
     }
 })
