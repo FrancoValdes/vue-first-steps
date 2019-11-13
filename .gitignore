@@ -1,0 +1,8 @@
+.vscode/
+build/
+dist/
+node_modules/
+*.log
+*.zip
+.env
+coverage

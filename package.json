@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "description": "first aplication from vue js",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancoValdes/vue-first-steps.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "FrancoValdes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FrancoValdes/vue-first-steps/issues"
+  },
+  "homepage": "https://github.com/FrancoValdes/vue-first-steps#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "nodemon": "^1.19.4"
+  }
+}
