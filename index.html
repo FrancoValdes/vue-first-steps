@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <div id="app">
-        {{ information }}
-        <input type="text" v-model="nuevaFruta">
-        <button @click="agregarFruta"></button>
-        <ul>
-            <li v-for="fruta of frutas">
-                {{ fruta.nombre }} - {{ fruta.cantidad }}
-                <span v-if="fruta.cantidad === 0"> - Sin Stock</span>
-            </li>
-            
-        </ul>
+    <div id="app" class="container">
+        <div :class="['p-3', fondo, 'text-white']">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, veritatis nemo? Voluptates perspiciatis itaque beatae a porro labore, quis quibusdam dolorum nemo, rerum dolore! Praesentium consequuntur quidem facilis eligendi aut?</p>
+        </div>
+
+        <div :class="['p-3', 'text-white', {'bg-info' : color}, {'bg-primary' : !color}]">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, veritatis nemo? Voluptates perspiciatis itaque beatae a porro labore, quis quibusdam dolorum nemo, rerum dolore! Praesentium consequuntur quidem facilis eligendi aut?</p>
+        </div>
+        <input type="button" value="cambiar" @click="cambiarColor">
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
