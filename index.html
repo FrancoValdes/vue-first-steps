@@ -8,21 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app">
-        <h1>{{ information }}</h1>
-        <input type="text" @class v-model="nuevaFruta" @keyup.enter="agregarFruta" :class="'f-l'">
-        <input type="number" :class="'f-l'" v-model="cantidad">
-        <button @click="agregarFruta">Agregar</button>
-        <ul>
-            <li v-for="fruta of frutas">
-                <input type="number" :class="'f-l'" v-model.number="fruta.cantidad" >
-                {{ fruta.nombre }}
-                <span v-if="fruta.cantidad === 0"> - Sin Stock</span>
-                <button @click="fruta.cantidad++">+</button>
-            </li>
-        </ul>
-        <h4 v-model="sumarFrutas"> TOTAL: {{ total }}</h4>
-    </div>
+        <div id="example">
+                <p>ori: "{{ message }}"</p>
+                <p>reserv: "{{ reversedMessage }}"</p>
+        </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="./features.js"></script>
