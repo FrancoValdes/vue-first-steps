@@ -6,27 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
+    <script src="components/padre.js"></script>
+    <script src="components/hijo.js"></script>
 </head>
 
 <body>
     <div id="app">
-        <saludo></saludo>
-        <saludo></saludo>
-        <saludo></saludo>
+        <h1>{{ saludo }}</h1>
+        <padre></padre>
     </div>
 </body>
 
 <!-- <script src="./features.js"></script> -->
-<script src="saludo.js"></script>
+
 <script>
-
-
-
     new Vue({
         el: '#app',
         data: {
-            saludo: 'hola'
+            saludo: 'HOLA SOY UN TITULO LAYOUT'
         }
     })
 
