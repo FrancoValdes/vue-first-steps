@@ -1,13 +1,14 @@
-var vm = new Vue({
-    el: '#example',
+var vn = new Vue({
+    el: '#app',
     data: {
-        message: 'Hello'
-    },
-    computed: {
-        // un getter computado
-        reversedMessage() {
-            // `this` apunta a la instancia de vm
-            return this.message.split('').reverse().join('')
-        }
+        saludo: 'hola'
     }
+})
+
+const component = new Vue.component('saludo',{
+    template: ` <div>
+    <h1>{{ saludo }}, </h1
+    <p>{{this.saludo }}</p>        
+</div>
+`
 })
