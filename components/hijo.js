@@ -1,17 +1,9 @@
 Vue.component('hijo',{
     template: //html 
     `
-    <div class="py-5 p-5 bg-success">
-        <h4>componente hijo</h4>
-        <p>{{ numero }}</p>
-        <h3>{{ nombre }}</h3>
+    <div class="py-5 p-5">
+    <button class="bg-success" @click="$store.commit('aumentar')">+</button>
+    <h1>numero: {{$store.state.numero}}
     </div>
-    `,
-    props: ['numero'],
-    data(){
-        return { nombre: 'franco' }
-    },
-    mounted() {
-        this.$emit('nombreHijo', this.nombre)
-    },
+    `
 })
